@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<package>
+  <name>haros_catkin</name>
+  <version>2.1.2</version>
+  <description>
+    Catkin integration for HAROS
+  </description>
+  <license>MIT</license>
+  <maintainer email="jonathan.hechtbauer@ipa.fraunhofer.de">Jonathan Hechtbauer</maintainer>
+  <author>Jonathan Hechtbauer</author>
+
+  <url type="repository">https://github.com/ipa-jfh/haros_catkin.git</url>
+  <url type="bugtracker">https://github.com/ipa-jfh/haros_catkin/issues</url>
+
+  <buildtool_depend>catkin</buildtool_depend>
+  <build_depend>catkin_virtualenv</build_depend>
+  <run_depend>cppcheck</run_depend>
+
+  <export>
+    <pip_requirements>requirements.txt</pip_requirements>
+  </export>
+</package>
