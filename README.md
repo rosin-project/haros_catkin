@@ -21,13 +21,13 @@ In the package that should get tested add the following.
 
 Add a test dependency to `package.xml`:
 
-```
+```xml
 <test_depend>haros_catkin</test_depend>
 ```
 
 Add the `haros_report` test to the `CMakeLists.txt`:
 
-```
+```c
 if (CATKIN_ENABLE_TESTING)
   find_package(haros_catkin REQUIRED)
   haros_report()
