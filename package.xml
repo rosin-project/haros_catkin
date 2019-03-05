@@ -14,7 +14,10 @@
 
   <buildtool_depend>catkin</buildtool_depend>
   <build_depend>catkin_virtualenv</build_depend>
+
+  <run_depend>cccc</run_depend>
   <run_depend>cppcheck</run_depend>
+  <run_depend>libclang-dev</run_depend>
 
   <export>
     <pip_requirements>requirements.txt</pip_requirements>
