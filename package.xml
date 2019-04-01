@@ -6,13 +6,14 @@
     Catkin integration for HAROS
   </description>
   <license>MIT</license>
-  <maintainer email="jonathan.hechtbauer@ipa.fraunhofer.de">Jonathan Hechtbauer</maintainer>
   <author>Jonathan Hechtbauer</author>
+  <maintainer email="g.a.vanderhoorn@tudelft.nl">G.A. vd. Hoorn (TU Delft Robotics Institute)</maintainer>
 
-  <url type="repository">https://github.com/ipa-jfh/haros_catkin.git</url>
-  <url type="bugtracker">https://github.com/ipa-jfh/haros_catkin/issues</url>
+  <url type="repository">https://github.com/rosin-project/haros_catkin.git</url>
+  <url type="bugtracker">https://github.com/rosin-project/haros_catkin/issues</url>
 
   <buildtool_depend>catkin</buildtool_depend>
+
   <build_depend>catkin_virtualenv</build_depend>
 
   <run_depend>cccc</run_depend>
