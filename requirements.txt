@@ -1,1 +1,2 @@
 haros>=2.1.2
+pyflwor-ext==1.2
