@@ -18,6 +18,7 @@ function(haros_report)
   set(HAROS_REPORT_LOCATION "${CMAKE_CURRENT_BINARY_DIR}/test_results/haros_report")
   _haros_create_targets()
   add_custom_command(TARGET haros_report_${PROJECT_NAME} POST_BUILD
+        COMMAND echo "Executing Haros for '${PROJECT_SOURCE_DIR}' .."
         COMMAND ${CMAKE_COMMAND} -E make_directory ${HAROS_REPORT_LOCATION}
         COMMAND ${CATKIN_ENV} rosrun haros_catkin haros init
         COMMAND ${CATKIN_ENV} rosrun haros_catkin haros -c ${PROJECT_SOURCE_DIR} analyse -d ${HAROS_REPORT_LOCATION}
