@@ -18,6 +18,7 @@
 
   <run_depend>cccc</run_depend>
   <run_depend>cppcheck</run_depend>
+  <run_depend>rosgraph</run_depend>
 
   <export>
     <pip_requirements>requirements.txt</pip_requirements>
