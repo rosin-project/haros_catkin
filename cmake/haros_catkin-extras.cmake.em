@@ -6,6 +6,8 @@ set(_HAROS_EXTRAS_INCLUDED_ TRUE)
 macro(_haros_create_targets)
   if (NOT TARGET haros_report)
     add_custom_target(haros_report)
+    # TODO: figure out whether this is the right target
+    add_dependencies(run_tests haros_report)
   endif()
 
   if (NOT TARGET haros_report_${PROJECT_NAME})
