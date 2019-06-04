@@ -23,7 +23,7 @@ endmacro()
 
 function(haros_report)
   set(HAROS_REPORT_LOCATION "${CMAKE_CURRENT_BINARY_DIR}/test_results/haros_report")
-  set(HAROS_COMMAND "${@(PROJECT_NAME)_VENV_BIN_DIR}/python" "${@(PROJECT_NAME)_VENV_BIN_DIR}/haros")
+  set(HAROS_COMMAND "${@(PROJECT_NAME)_VENV_BIN_DIR}/haros")
   _haros_create_targets()
   add_custom_command(TARGET haros_report_${PROJECT_NAME} POST_BUILD
         COMMAND ${CMAKE_COMMAND} -E make_directory ${HAROS_REPORT_LOCATION}
