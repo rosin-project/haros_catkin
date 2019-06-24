@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <package format="2">
   <name>haros_catkin</name>
-  <version>2.1.2</version>
+  <version>3.5.2</version>
   <description>
     Catkin integration for HAROS
   </description>
