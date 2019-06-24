@@ -10,6 +10,7 @@
   <author>Jonathan Hechtbauer (Catkin wrapper)</author>
   <maintainer email="g.a.vanderhoorn@tudelft.nl">G.A. vd. Hoorn (TU Delft Robotics Institute)</maintainer>
 
+  <url>https://github.com/git-afsantos/haros.git</url>
   <url type="repository">https://github.com/rosin-project/haros_catkin.git</url>
   <url type="bugtracker">https://github.com/rosin-project/haros_catkin/issues</url>
 
