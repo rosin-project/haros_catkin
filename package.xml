@@ -6,7 +6,8 @@
     Catkin integration for HAROS
   </description>
   <license>MIT</license>
-  <author>Jonathan Hechtbauer</author>
+  <author>Andre Santos (HAROS)</author>
+  <author>Jonathan Hechtbauer (Catkin wrapper)</author>
   <maintainer email="g.a.vanderhoorn@tudelft.nl">G.A. vd. Hoorn (TU Delft Robotics Institute)</maintainer>
 
   <url type="repository">https://github.com/rosin-project/haros_catkin.git</url>
