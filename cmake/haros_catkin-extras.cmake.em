@@ -20,8 +20,11 @@ function(haros_report)
   else()
     set(HAROS_REPORT_LOCATION "${HAROS_REPORT_LOCATION}/${CMAKE_PROJECT_NAME}")
   endif()
+  if(HAROS_HOME_LOCATION)
+    set(HAROS_HOME_CMD "--home=${HAROS_HOME_LOCATION}")
+  endif()
   _haros_create_targets()
   add_custom_command(TARGET haros_report_${PROJECT_NAME} POST_BUILD
         COMMAND ${CMAKE_COMMAND} -E make_directory ${HAROS_REPORT_LOCATION}
-        COMMAND rosrun haros_catkin haros -c ${PROJECT_SOURCE_DIR} analyse -d ${HAROS_REPORT_LOCATION})
+        COMMAND rosrun haros_catkin haros ${HAROS_HOME_CMD} -c ${PROJECT_SOURCE_DIR} analyse -d ${HAROS_REPORT_LOCATION})
 endfunction()
