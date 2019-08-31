@@ -15,7 +15,17 @@ macro(_haros_create_targets)
 endmacro()
 
 function(haros_report)
-  set(HAROS_REPORT_LOCATION "${CMAKE_CURRENT_BINARY_DIR}/test_results/haros_report")
+  cmake_parse_arguments(
+    HAROS
+    ""
+    "REPORT_LOCATION"
+    ""
+    ${ARGN} )
+  if(NOT HAROS_REPORT_LOCATION)
+    set(HAROS_REPORT_LOCATION "${CMAKE_CURRENT_BINARY_DIR}/test_results/haros_report")
+  else()
+    set(HAROS_REPORT_LOCATION "${HAROS_REPORT_LOCATION}/${CMAKE_PROJECT_NAME}")
+  endif()
   _haros_create_targets()
   add_custom_command(TARGET haros_report_${PROJECT_NAME} POST_BUILD
         COMMAND ${CMAKE_COMMAND} -E make_directory ${HAROS_REPORT_LOCATION}
