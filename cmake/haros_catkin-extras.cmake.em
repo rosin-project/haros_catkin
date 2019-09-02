@@ -14,6 +14,19 @@ macro(_haros_create_targets)
   endif()
 endmacro()
 
+# execute haros' analyse given the following optional arguments:
+# - REPORT_LOCATION: the folder to be used by haros' output
+#                    note that this folder will be prepended
+#                    by the CMAKE_PROJECT_NAME. If unset,
+#                    the report will be stored in the
+#                    CMAKE_CURRENT_BINARY_DIR/test_results/haros_report
+#                    (e.g. catkin_ws/build/<pkg>/test_results/haros_report)
+# - CONFIG_PATH:     the path of the yaml config to be used
+#                    by haros. If unset, the default configured
+#                    in haros will be used.
+# - HOME_PATH:       the folder of use for the haros home path.
+#                    If unset, the default configured in haros
+#                    will be used.
 function(haros_report)
   cmake_parse_arguments(
     HAROS
