@@ -1,9 +1,9 @@
 <?xml version="1.0"?>
 <package format="2">
   <name>haros_catkin</name>
-  <version>3.6.0</version>
+  <version>0.1.0</version>
   <description>
-    Catkin integration for HAROS
+    Catkin integration for HAROS (version 3.6.0)
   </description>
   <license>MIT</license>
   <author>Andre Santos (HAROS)</author>
