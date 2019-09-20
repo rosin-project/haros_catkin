@@ -23,7 +23,7 @@ env:
     - CCACHE_DIR=$HOME/.ccache # enables C/C++ caching in industrial_ci
     - AFTER_SCRIPT='./test_haros_report.sh' # execute haros_report on haros_catkin_test after the build
   matrix: # each line is a job
-    - ROS_DISTRO="lunar"    ROS_REPO=ros-shadow-fixed DOWNSTREAM_WORKSPACE="github:ipa-jfh/haros_catkin_test#master" # overrides the global
+    - ROS_DISTRO="lunar"    ROS_REPO=ros-shadow-fixed UPSTREAM_WORKSPACE="github:locusrobotics/catkin_virtualenv#f823bc6" DOWNSTREAM_WORKSPACE="github:ipa-jfh/haros_catkin_test#master" # overrides the global
     - ROS_DISTRO="kinetic"  DOWNSTREAM_WORKSPACE="github:ipa-jfh/haros_catkin_test#master"
     - ROS_DISTRO="melodic"  DOWNSTREAM_WORKSPACE="github:ipa-jfh/haros_catkin_test#master"
 
