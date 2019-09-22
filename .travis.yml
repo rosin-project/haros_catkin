@@ -14,7 +14,7 @@ env:
   global:
     - ROS_REPO=ros
     - CCACHE_DIR=$HOME/.ccache
-    - AFTER_SCRIPT='./test_haros_report.sh'
+    - AFTER_SCRIPT='catkin build --workspace=/root/downstream_ws test_pkg --verbose --no-deps --make-args haros_report'
   matrix:
     - ROS_DISTRO="kinetic"  DOWNSTREAM_WORKSPACE="github:ipa-jfh/haros_catkin_test#master"
     - ROS_DISTRO="melodic"  DOWNSTREAM_WORKSPACE="github:ipa-jfh/haros_catkin_test#master"
